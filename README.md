@@ -1,7 +1,8 @@
 # Selenium Jenkins Automation 🚀
 
-![Selenium Logo](https://selenium.dev/images/selenium_logo_large.png)
-![Jenkins Logo](https://www.jenkins.io/images/logos/jenkins/jenkins.png)
+<!-- Local logos stored in the `images` folder -->
+<img src="images/selenium.png" alt="Selenium Logo" width="120"/>
+<img src="images/jenkins.png" alt="Jenkins Logo" width="120"/>
 
 This repository contains example Java code showing how to use **Selenium WebDriver** with **Jenkins** for automated testing. It demonstrates common Selenium operations such as searching items on Amazon, handling pop‑ups, managing browser waits, and taking screenshots.
 
@@ -22,6 +23,4 @@ Happy testing! :sparkles:
 
 ## Visual Overview
 Below is a simple diagram showing how Selenium tests integrate with Jenkins:
-
-![Pipeline Diagram](https://raw.githubusercontent.com/jenkins-infra/jenkins.io/main/static/images/pipeline/jenkins-pipeline.svg)
 
