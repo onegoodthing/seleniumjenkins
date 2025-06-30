@@ -1,20 +1,19 @@
 package sample;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 public class AppleInterview {
 	static WebDriver driver = new ChromeDriver();
 	static AppleInterview apl= new AppleInterview();
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		checkSecondHighest();
 		try {
 		driver.get("https://www.google.com");
 		driver.manage().window().maximize();
@@ -24,18 +23,16 @@ public class AppleInterview {
 		input.sendKeys("Regression Testing");
 		//Thread.sleep(10000);
 		input.submit();
-		List<WebElement> list = new ArrayList<WebElement>();
+		List<WebElement> list;
 		list= driver.findElements(By.partialLinkText("regression"));
-		
-		
 		for(WebElement we: list) {
-			System.out.println("All elemnets are: "+we.getText());
+			System.out.println("All elements are: "+we.getText());
 		}
-		
-		
-		}catch(Exception e) {
+		} catch (NullPointerException e) {
 			e.getMessage();
-		}finally{
+			throw new NullPointerException();
+		}
+		finally{
 			driver.quit();
 		}
 	}
@@ -51,4 +48,16 @@ public class AppleInterview {
         }
     
     }
+	public static void checkSecondHighest(){
+		try {
+			int[] a = {23,87,32,78,99,99,89,99};
+			Arrays.sort(a);
+				System.out.println(Arrays.toString(a));
+				System.out.println("Second Highest "+a[a.length-2]);
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}
+	}
+
+
 }
