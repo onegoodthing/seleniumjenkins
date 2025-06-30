@@ -10,7 +10,7 @@ import javax.net.ssl.HttpsURLConnection;
 import java.net.URL;
 import java.util.List;
 /**
- * Adding Java class to check for broken links in a website.
+ * Adding Java class to check for broken links in a website
  * */
 public class CheckBrokenLinks {
     public static void main(String[] args) {
