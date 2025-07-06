@@ -1,4 +1,4 @@
-package sample;
+package selenium.sample;
 
 public class TestingNew {
 

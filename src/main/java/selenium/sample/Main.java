@@ -1,4 +1,6 @@
-package sample;
+package selenium.sample;
+
+import java.util.HashSet;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -13,5 +15,22 @@ public class Main {
             // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
             System.out.println("i = " + i);
         }
+//Largest number
+        int[] arr = {14, 3, 5, 7, 9,8, 6, 4,9,10,18};
+        int largest = arr[0];
+        for (int num : arr) {
+            if (num > largest) {
+                largest = num;
+            }
+        }
+        System.out.println("Largest "+largest);
+
+        // Duplicate in an array
+
+        HashSet<Integer> set = new HashSet<>();
+        for (int num : arr) {
+            set.add(num);
+        }
+        System.out.println("Without Duplicate"+set);
     }
 }

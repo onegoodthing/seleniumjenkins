@@ -1,7 +1,9 @@
-package sample;
+package selenium.sample;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,6 +16,7 @@ public class AppleInterview {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		checkSecondHighest();
+		stringDuplicateWords();
 		try {
 		driver.get("https://www.google.com");
 		driver.manage().window().maximize();
@@ -55,6 +58,22 @@ public class AppleInterview {
 				System.out.println(Arrays.toString(a));
 				System.out.println("Second Highest "+a[a.length-2]);
 		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}
+	}
+
+	public static void stringDuplicateWords(){
+		try{
+		String str= "Go morning Ireland Go morning Ireland";
+			Set<String> hs= new HashSet<String>();
+		for(int i=0;i<str.length();i++){
+			str.split(" ");
+			System.out.println(str);
+			hs.add(str);
+		}
+
+		System.out.println(hs);
+	}catch(Exception e){
 			throw new RuntimeException(e);
 		}
 	}

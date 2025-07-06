@@ -1,4 +1,4 @@
-package sample;
+package selenium.sample;
 
 import java.util.ArrayList;
 import java.util.List;

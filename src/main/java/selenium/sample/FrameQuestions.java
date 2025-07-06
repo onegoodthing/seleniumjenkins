@@ -1,4 +1,4 @@
-package sample;
+package selenium.sample;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,7 @@ public class FrameQuestions {
 		WebDriver driver = new ChromeDriver();
 		try {
 			
-			/** Handle Sample Frame*/
+			/* Handle Sample Frame **/
 			driver.get("https://demoqa.com/frames");
 			driver.switchTo().frame("frame1");
 			String frameText = driver.findElement(By.id("sampleHeading")).getText();
@@ -23,7 +23,7 @@ public class FrameQuestions {
 			driver.switchTo().defaultContent(); // Return to main page
 			
 			
-			/** Handle nested frames */
+			/* Handle nested frames */
 			driver.get("https://demoqa.com/nestedframes");
 			// Switch to parent frame
 			driver.switchTo().frame("frame1");

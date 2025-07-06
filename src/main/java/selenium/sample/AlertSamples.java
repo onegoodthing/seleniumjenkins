@@ -1,4 +1,4 @@
-package sample;
+package selenium.sample;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;

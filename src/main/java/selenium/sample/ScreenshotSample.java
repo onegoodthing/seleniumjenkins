@@ -1,4 +1,4 @@
-package sample;
+package selenium.sample;
 
 import java.io.File;
 
