@@ -8,6 +8,7 @@ This repository contains example Java code showing how to use **Selenium WebDriv
 ## Features
 - Simple Maven project structure
 - Sample classes under `src/main/java/sample` covering different Selenium techniques
+- Automated accessibility testing using axe-core integrated with Selenium WebDriver. It validates WCAG 2.1 A & AA compliance and fails the test suite on any serious or critical violations. User 'src/test/java/testing/accessibility/AccessibilitySampleTest.java'
 - Ready to integrate with Jenkins pipelines for continuous testing
 
 ## Getting Started
