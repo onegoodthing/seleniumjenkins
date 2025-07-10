@@ -5,20 +5,28 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 
 import java.util.Set;
 
 public class NewWindowHandle {
 
-    public static void main(String[] args) {
-/*Adding Chrome options for maximizing the window and Launching in Particular Dimension.
-* */
+    @BeforeTest
+    public static WebDriver openUrl() {
+        /*Adding Chrome options for maximizing the window and Launching in Particular Dimension.
+         * */
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
         options.addArguments("--window-size=1920,1080");
         WebDriver driver = new ChromeDriver(options);
         driver.get("https://academy.naveenautomationlabs.com/");
 
+        return driver;
+    }
+
+    public static void main(String[] args) {
+
+        WebDriver driver= openUrl();
         /*
          * CLick on Demo Site link for new window
          */
